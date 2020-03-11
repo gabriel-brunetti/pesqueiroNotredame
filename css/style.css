@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h2,
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  z-index: 3;
+}
+
+/* texto do header */
+nav > h1 {
+  text-transform: lowercase;
+  text-decoration: underline;
+  display: inline-block;
+  line-height: 30px;
+  font-size: 55px;
+  color: #fff;
+  padding: 20px;
+  margin-right: 30vw;
+}
+
+nav > ul {
+  display: inline-block;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav ul li a {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 15px;
+  margin-right: 5px;
+}
+
+nav ul li a:hover {
+  box-shadow: inset 0 0 0 1px white;
+}
+
+.videoContainer {
+  position: relative;
+}
+
+iframe {
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200vh;
+  height: 113vh;
+  z-index: 1;
+}
+
+.videoContainer::before {
+  background-color: rgba(0, 0, 0, 0.4);
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  margin: solid 1px #ffffff;
+}
+
+.textoContainer {
+  position: absolute;
+  top: 65%;
+  left: 65%;
+}
+
+.textoContainer > h1 {
+  position: absolute;
+  font-size: 60px;
+  color: #fdfdfd;
+  z-index: 3;
+  padding: 25px;
+  box-shadow: inset 0 0 0 10px white;
+}
+
+.container {
+  width: 1020px;
+  height: 50vh;
+  margin: 50px auto;
+}
+
+.container .texto {
+  display: inline-block;
+  width: 45%;
+  margin-right: 5%;
+  box-shadow: inset 0px 0 0 4px #999999;
+  padding: 30px;
+}
+
+.container .texto h2 {
+  font-size: 32px;
+  color: #000;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+.container .texto p {
+  text-align: justify;
+  padding-bottom: 15px;
+}
+
+.container .texto img {
+  display: block;
+  width: 100%;
+}
+
+.container .lista {
+  background: #999999;
+  display: inline-block;
+  width: 45%;
+  padding: 50px;
+  height: 400px;
+}
+
+.container .lista h2 {
+  padding-bottom: 10px;
+  font-size: 32px;
+  color: #fdfdfd;
+  font-weight: bolder;
+}
+
+.container .lista ul {
+  list-style-type: none;
+}
+
+.container .lista ul li {
+  font-size: 18px;
+}
+
+.imagemContainer1 {
+  position: absolute;
+  width: 100%;
+}
+
+.imagemDiv {
+  position: relative;
+  height: 100vh;
+  background: url(../images/two-men-fishing-on-lake-1630039.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  filter: grayscale(0.2);
+}
+
+.imagemDiv h1 {
+  position: absolute;
+  top: 55%;
+  left: 65%;
+  color: black;
+  font-size: 48px;
+  padding: 10px 50px;
+  box-shadow: inset 0 0 0 7px black;
+}
+
+.imagemDiv footer {
+  position: absolute;
+  top: 97%;
+  color: #fdfdfd;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  background-color: #4d4d4d;
+}
